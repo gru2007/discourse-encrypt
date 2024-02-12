@@ -100,7 +100,7 @@ after_initialize do
       prepend DiscourseEncrypt::SiteSettingsTypeSupervisorExtensions
     end
     Topic.class_eval { prepend DiscourseEncrypt::TopicExtensions }
-    #TopicGuardian.class_eval { prepend DiscourseEncrypt::TopicGuardianExtension }
+    TopicGuardian.class_eval { prepend DiscourseEncrypt::TopicGuardianExtension }
     TopicsController.class_eval { prepend DiscourseEncrypt::TopicsControllerExtensions }
     TopicViewSerializer.class_eval { prepend DiscourseEncrypt::TopicViewSerializerExtension }
     UploadValidator.class_eval { prepend DiscourseEncrypt::UploadValidatorExtensions }

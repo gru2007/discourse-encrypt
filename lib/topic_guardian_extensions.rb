@@ -2,6 +2,6 @@
 
 module DiscourseEncrypt::TopicGuardianExtension
   def can_convert_topic?(topic)
-    super && !topic.is_encrypted?
+    super
   end
 end
